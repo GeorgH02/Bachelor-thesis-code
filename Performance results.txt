@@ -38,7 +38,11 @@ Accuracy: 50,96%
 Precision: 51,99%
 Recall: 50,96%
 F1-Score: 43,65%
-
+after fine-tuning on 10k rows of Tweets-BigTech data:
+Accuracy: 0.2831578947368421
+Precision: 0.18883091733571217
+Recall: 0.2831578947368421
+F1-Score: 0.21714166747155744
 
 
 NER:
