@@ -33,6 +33,19 @@ Precision: 0.6684950730088312
 Recall: 0.5525
 F1-Score: 0.5044394096592938
 
+BERT-base-uncased fine-tuned using ~25k Tweets-Bigtech, 2 epochs, 
+evaluated on separate test dataset:
+Accuracy: 0.912
+Precision: 0.9121157265185696
+Recall: 0.912
+F1-Score: 0.9118522077610691
+evaluated on Brand-Sentiment-Analysis:
+Accuracy: 0.5525151374010246
+Precision: 0.6335749784291748
+Recall: 0.5525151374010246
+F1-Score: 0.5743773762349313
+
+
 Llama-2-7b-CHAT-hf without fine-tuning applied to Tweets-BigTech data (only on positive and negative posts):
 Accuracy: 50,96%
 Precision: 51,99%
@@ -74,6 +87,11 @@ F1 = 68,4%
 Precision: 0.9230
 Recall: 0.9252
 F1 Score: 0.9241
+
+RoBERTa-Base-TweetNER7-all without additional fine-tuning tested on 10k rows of synthetic data (own evaluation):
+Precision: 0.9744
+Recall: 0.9525
+F1 Score: 0.9634
 
 BERT-base-cased fine-tuned with TweetNER7-big and 3 epochs (own evaluation), 
 tested on "test2020"-part:
