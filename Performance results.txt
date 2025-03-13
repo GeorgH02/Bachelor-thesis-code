@@ -93,6 +93,11 @@ Precision: 0.9744
 Recall: 0.9525
 F1 Score: 0.9634
 
+RoBERTa-Base-TweetNER7-all without additional fine-tuning tested on 8k rows of WNUT (own evaluation):
+Precision: 0.9703
+Recall: 0.9349
+F1 Score: 0.9523
+
 BERT-base-cased fine-tuned with TweetNER7-big and 3 epochs (own evaluation), 
 tested on "test2020"-part:
 Precision: 0.6942
@@ -103,6 +108,12 @@ BERT-base-cased fine-tuned with TweetNER7-bigger and 3 epochs (left out and test
 Precision: 0.8920
 Recall: 0.9056
 F1 Score: 0.8987
+
+BERT-base-cased fine-tuned with 18k rows (after split) of NER-corpus, tested on separate test-set (trainer.evalute):
+Precision: 0.9511
+Recall: 0.9544
+F1: 0.9513
+
 
 Covid-Twitter-BERT with 4700 rows of TweetNER7 and 3 epochs (NERvaluate): 
 Precision = 47%
