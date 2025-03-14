@@ -14,6 +14,13 @@ Precision: 65,84%
 Recall: 56,76%
 F1-Score: 57,42%
 
+BerTWEET-Base-Sentiment-Analysis tested with Sentiment corpus (no own fine-tuning):
+Accuracy: 0.6272260790824027
+Precision: 0.6611441262229791
+Recall: 0.6272260790824027
+F1-Score: 0.6272425239648367
+
+
 BerTWEET-Base-Sentiment-Analysis fine-tuned with 8600 rows of Brand Sentiment Analysis data and 2 epochs, 
 tested on Tweets Big Tech data: 
 Accuracy = 56,34%
@@ -45,6 +52,10 @@ Precision: 0.6335749784291748
 Recall: 0.5525151374010246
 F1-Score: 0.5743773762349313
 
+BERT-base-uncased fine-tuned with Sentiment corpus with 2 epochs,
+evaluated on separate test dataset:
+
+
 
 Llama-2-7b-CHAT-hf without fine-tuning applied to Tweets-BigTech data (only on positive and negative posts):
 Accuracy: 50,96%
@@ -69,6 +80,13 @@ Accuracy: 0.5846530041918957
 Precision: 0.5381664117219317
 Recall: 0.5846530041918957
 F1-Score: 0.5525406933042277
+
+Llama-2-7b-hf with fine-tuning on 20k rows of Sentiment corpus and 2 epochs,
+tested on separate test-split:
+Accuracy: 0.6153588195841717
+Precision: 0.6213290651162944
+Recall: 0.6153588195841717
+F1-Score: 0.6155148850972142
 
 
 
