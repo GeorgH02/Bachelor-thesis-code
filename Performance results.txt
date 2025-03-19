@@ -54,7 +54,10 @@ F1-Score: 0.5743773762349313
 
 BERT-base-uncased fine-tuned with Sentiment corpus with 2 epochs,
 evaluated on separate test dataset:
-
+Accuracy: 0.7965291750503019
+Precision: 0.7986248172846812
+Recall: 0.7965291750503019
+F1-Score: 0.7955255622161136
 
 
 Llama-2-7b-CHAT-hf without fine-tuning applied to Tweets-BigTech data (only on positive and negative posts):
