@@ -60,6 +60,12 @@ Recall: 0.7965291750503019
 F1-Score: 0.7955255622161136
 
 
+CardiffNLP Twitter RoBERTa base Sentiment latest, tested on 10k sample of sentiment corpus:
+Accuracy: 0.6315
+Precision: 0.6551255252262623
+Recall: 0.6315
+F1-Score: 0.6326440294565018
+
 Llama-2-7b-CHAT-hf without fine-tuning applied to Tweets-BigTech data (only on positive and negative posts):
 Accuracy: 50,96%
 Precision: 51,99%
@@ -147,6 +153,16 @@ Recall = 3,6%
 F1 = 6,5%
 increasing validation loss -> overfitting? bigger dataset necessary?
 
+Covid-Twitter-BERT with 24k rows of NER-corpus, 2 epochs (trainer.evaluate), separate testset:
+Precision: 0.9549
+Recall: 0.9571
+F1 Score: 0.9560
+NERvaluate: 
+Precision:0.7963
+Recall:0.7623
+F1: 0.7789
+
+
 Llama-2-7b-hf with 10000 rows of TweetNER7 and 2 epochs (with tweetner7-big, evaluated with trainer.evaluate/own evaluation function):
 Precision = 80,21%
 Recall = 86,38%
@@ -159,3 +175,10 @@ with 4 epochs (tweetner7-bigger):
 Precision: 0.8788
 Recall: 0.8985
 F1 Score: 0.8886
+
+Llama-2-7b-hf with 24k rows of NER corpus, 2 epochs, separate test dataset, 
+trainer.evaluate:
+Precision: 92,6%
+Recall: 93,5%
+F1: 92,7%
+NERvaluate:
