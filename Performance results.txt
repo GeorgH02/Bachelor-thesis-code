@@ -40,6 +40,12 @@ Precision: 0.6684950730088312
 Recall: 0.5525
 F1-Score: 0.5044394096592938
 
+BerTWEET-base-sentiment-analysis with Sentiment corpus and 2 epochs:
+Accuracy: 0.8163
+Precision: 0.8165
+Recall: 0.8163
+F1-Score: 0.8151
+
 BERT-base-uncased fine-tuned using ~25k Tweets-Bigtech, 2 epochs, 
 evaluated on separate test dataset:
 Accuracy: 0.912
@@ -54,10 +60,10 @@ F1-Score: 0.5743773762349313
 
 BERT-base-uncased fine-tuned with Sentiment corpus with 2 epochs,
 evaluated on separate test dataset:
-Accuracy: 0.7965291750503019
-Precision: 0.7986248172846812
-Recall: 0.7965291750503019
-F1-Score: 0.7955255622161136
+Accuracy: 0.8029
+Precision: 0.8034
+Recall: 0.8029
+F1-Score: 0.8015
 
 
 CardiffNLP Twitter RoBERTa base Sentiment latest, tested on 10k sample of sentiment corpus:
@@ -65,6 +71,13 @@ Accuracy: 0.6315
 Precision: 0.6551255252262623
 Recall: 0.6315
 F1-Score: 0.6326440294565018
+
+CardiffNLP Twitter RoBERTa base Sentiment latest after 2 epochs sentiment corpus:
+Accuracy: 0.8076
+Precision: 0.8083
+Recall: 0.8076
+F1-Score: 0.8061 
+
 
 Llama-2-7b-CHAT-hf without fine-tuning applied to Tweets-BigTech data (only on positive and negative posts):
 Accuracy: 50,96%
@@ -92,10 +105,10 @@ F1-Score: 0.5525406933042277
 
 Llama-2-7b-hf with fine-tuning on 20k rows of Sentiment corpus and 2 epochs,
 tested on separate test-split:
-Accuracy: 0.6153588195841717
-Precision: 0.6213290651162944
-Recall: 0.6153588195841717
-F1-Score: 0.6155148850972142
+Accuracy: 0.7162
+Precision: 0.7192
+Recall: 0.7162
+F1-Score: 0.7159
 
 
 
@@ -125,6 +138,15 @@ Precision: 0.9703
 Recall: 0.9349
 F1 Score: 0.9523
 
+RoBERTa-base with NER corpus, 3 epochs, trainer.evaluate:
+Precision: 0.9534
+Recall: 0.9553
+F1 Score: 0.9543
+NERvaluate:
+Precision: 0.774188876013905 
+Recall: 0.7594487070190395 
+F1: 0.766747955816956
+
 BERT-base-cased fine-tuned with TweetNER7-big and 3 epochs (own evaluation), 
 tested on "test2020"-part:
 Precision: 0.6942
@@ -136,10 +158,14 @@ Precision: 0.8920
 Recall: 0.9056
 F1 Score: 0.8987
 
-BERT-base-cased fine-tuned with 18k rows (after split) of NER-corpus, tested on separate test-set (trainer.evalute):
-Precision: 0.9511
-Recall: 0.9544
-F1: 0.9513
+BERT-base-cased fine-tuned with 18k rows (after split) of NER-corpus, 2 epochs, tested on separate test-set (trainer.evaluate):
+Precision: 0.9504
+Recall: 0.9528
+F1 Score: 0.9516
+NERvaluate:
+Precision: 0.7669094693028096 
+Recall: 0.7330207445296959 
+F1: 0.7495822738830366
 
 
 Covid-Twitter-BERT with 4700 rows of TweetNER7 and 3 epochs (NERvaluate): 
@@ -154,13 +180,13 @@ F1 = 6,5%
 increasing validation loss -> overfitting? bigger dataset necessary?
 
 Covid-Twitter-BERT with 24k rows of NER-corpus, 2 epochs (trainer.evaluate), separate testset:
-Precision: 0.9549
-Recall: 0.9571
-F1 Score: 0.9560
+Precision: 0.9543
+Recall: 0.9564
+F1 Score: 0.9554
 NERvaluate: 
-Precision:0.7963
-Recall:0.7623
-F1: 0.7789
+Precision: 0.7863
+Recall: 0.7631
+F1: 0.7745
 
 
 Llama-2-7b-hf with 10000 rows of TweetNER7 and 2 epochs (with tweetner7-big, evaluated with trainer.evaluate/own evaluation function):
@@ -177,8 +203,11 @@ Recall: 0.8985
 F1 Score: 0.8886
 
 Llama-2-7b-hf with 24k rows of NER corpus, 2 epochs, separate test dataset, 
-trainer.evaluate:
-Precision: 92,6%
-Recall: 93,5%
-F1: 92,7%
+simple evaluation:
+Precision: 0.9304
+Recall: 0.9342
+F1 Score: 0.9323
 NERvaluate:
+Precision: 0.8294 
+Recall: 0.5104 
+F1: 0.6319
