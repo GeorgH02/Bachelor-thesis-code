@@ -72,7 +72,7 @@ Precision: 0.6551255252262623
 Recall: 0.6315
 F1-Score: 0.6326440294565018
 
-CardiffNLP Twitter RoBERTa base Sentiment latest after 2 epochs sentiment corpus:
+CardiffNLP Twitter RoBERTa base Sentiment latest after 2 epochs sentiment corpus, separate testset:
 Accuracy: 0.8076
 Precision: 0.8083
 Recall: 0.8076
