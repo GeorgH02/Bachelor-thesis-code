@@ -143,9 +143,14 @@ Precision: 0.9534
 Recall: 0.9553
 F1 Score: 0.9543
 NERvaluate:
+ent_type:
 Precision: 0.774188876013905 
 Recall: 0.7594487070190395 
 F1: 0.766747955816956
+strict:
+Precision: 0.7357 
+Recall: 0.7217 
+F1: 0.7286
 
 BERT-base-cased fine-tuned with TweetNER7-big and 3 epochs (own evaluation), 
 tested on "test2020"-part:
@@ -163,9 +168,14 @@ Precision: 0.9504
 Recall: 0.9528
 F1 Score: 0.9516
 NERvaluate:
+ent_type:
 Precision: 0.7669094693028096 
 Recall: 0.7330207445296959 
 F1: 0.7495822738830366
+strict:
+Precision: 0.7262 
+Recall: 0.6941 
+F1: 0.7098
 
 
 Covid-Twitter-BERT with 4700 rows of TweetNER7 and 3 epochs (NERvaluate): 
@@ -179,15 +189,20 @@ Recall = 3,6%
 F1 = 6,5%
 increasing validation loss -> overfitting? bigger dataset necessary?
 
-Covid-Twitter-BERT with 24k rows of NER-corpus, 2 epochs (trainer.evaluate), separate testset:
-Precision: 0.9543
-Recall: 0.9564
+Covid-Twitter-BERT with 24k rows of NER-corpus, 2 epochs, separate testset:
+trainer.evaluate:
+Precision: 0.9548
+Recall: 0.9571
 F1 Score: 0.9554
-NERvaluate: 
-Precision: 0.7863
-Recall: 0.7631
-F1: 0.7745
-
+NERvaluate:
+ent_type: 
+Precision: 0.7943
+Recall: 0.7619
+F1: 0.7777
+strict: 
+Precision: 0.6488
+Recall: 0.6099
+F1: 0.6288
 
 Llama-2-7b-hf with 10000 rows of TweetNER7 and 2 epochs (with tweetner7-big, evaluated with trainer.evaluate/own evaluation function):
 Precision = 80,21%
@@ -208,6 +223,11 @@ Precision: 0.9304
 Recall: 0.9342
 F1 Score: 0.9323
 NERvaluate:
+ent_type:
 Precision: 0.8294 
 Recall: 0.5104 
 F1: 0.6319
+strict:
+Precision: 0.7375
+Recall: 0.4538
+F1: 0.5619
