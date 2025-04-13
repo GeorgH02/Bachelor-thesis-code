@@ -1,0 +1,17 @@
+pandas
+transformers
+torch
+torchvision
+torchaudio
+huggingface
+huggingface_hub
+accelerate
+ipywidgets
+sklearn
+re
+urlextract
+json
+matplotlib
+wordcloud
+datasets
+nervaluate
